@@ -1,19 +1,19 @@
-/*
-Given a [n x m] matrix with 0's and 1's, find the largest square matrix
-area of 1's
-Example: Given this matrix:
- 1 1 0 1 0
- 0 1 1 1 0
- 1 1 1 1 0
- 0 1 1 1 1
-
-The result given the matrix above should be 3, because 3^2 = 9
-
- 1  1 0 1  0
- 0 [1 1 1] 0
- 1 [1 1 1] 0
- 0 [1 1 1] 1
-
+/** Casey has a square image made up of black and white pixels
+ * represented as 0 and 1 respectively. As part of an image analysis
+ * process, Casey needs to determine the size of the largest square area
+ * of white pixels. Given a 2-dimensional square matrix that represents
+ * the image, write a function to determine the length of a side of the
+ * largest square area made up of white pixels.
+ * For example, the n x n = 5 x 5 matrix of pixels is represented as
+ * arr =[[1,1,1,1,1], [1,1,1,0,0], [1,1,1,0,0], [1,1,1,0,0], [1,1,1,1,1].
+ * A diagram of the matrix is
+ * 1 1 1 1 1
+ * 1 1 1 0 0
+ * 1 1 1 0 0
+ * 1 1 1 0 0
+ * 1 1 1 1 1
+ * The largest square sub-matrix is 3 x 3 in size starting at position
+ * (0,0), (1,0) or (2,0). The expected return value is 3.
  */
 function largestSquare(matrix) {
   const cacheMatrix = [...matrix];
